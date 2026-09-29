@@ -1,14 +1,19 @@
-const input = document.getElementById('myInput');
-const button = document.getElementById('myButton');
-button.textContent = input.value;
+const text = document.querySelector("#new-text");
+const button = document.querySelector("#button");
 
-const image = document.getElementById('myImage');
-image.src = 'image2.jpg';
+button.textContent = text.textContent;
 
-const link = document.getElementById('myLink');
-const img = document.getElementById('contentImage');
-link.href = 'https://store.steampowered.com/?l=russian';
-img.setAttribute('alt', 'Опис цього зображення');
+const img = document.querySelector(".img");
 
-const firstItem = document.querySelector('#myList li');
-firstItem.textContent = 'Змінений перший елемент';
+img.src =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJyJDfSfgEHE_dEMN00VDDFv2UsvaHCohwP53nMdl1fQ&s=10";
+
+const imge = document.createElement("img");
+
+const link = document.querySelector("#Link");
+const imgs = document.querySelector("#images");
+link.href = "https://www.youtube.com/";
+imgs.alt = "Опис цього зображення";
+
+const firstItem = document.querySelector("#list li");
+firstItem.textContent = "Змінений перший елемент";
